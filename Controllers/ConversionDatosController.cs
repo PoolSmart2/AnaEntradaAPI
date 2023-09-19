@@ -11,6 +11,9 @@ using static EntradaAPI.ConversionDatos;
 using Microsoft.AspNetCore.Http;
 using System.Net.Mime;
 using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.Text;
+using EntradaAPI.BO;
 
 namespace EntradaAPI.Controllers
 {
@@ -34,13 +37,47 @@ namespace EntradaAPI.Controllers
         {
             try
             {
-                using var reader = new StreamReader(@"C:\Users\desarrollo1\Downloads\centros_atencion_metrosalud.csv");
-                using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+                Resultado Resul = new Resultado
+                {
+                    Estado = false
+                };
+                try
+                {
+                    string csvFilePath = csvRequest.UrlCsv;
+                    StringBuilder sb = new StringBuilder();
 
-                var records = csv.GetRecords<dynamic>();
-              
-                var JSON = JsonConvert.SerializeObject(records);
-                return Ok(JSON);
+                    using (StreamReader sr = new StreamReader(csvFilePath))
+                    {
+                        string line;
+                        while ((line = sr.ReadLine()) != null)
+                        {
+                            sb.AppendLine(line);
+                        }
+                    }
+
+                    string csvString = sb.ToString();
+
+
+                    Resul.CsvString = csvString;
+                    Resul.Estado = true;
+                }
+                catch (Exception Ex)
+                {
+                    Resul.Error = Ex.Message;
+                }
+
+                //Console.WriteLine(csvString);
+                return Ok(Resul);
+                //return Ok(JsonConvert.SerializeObject(csvString));
+
+
+                //Codigo Bueno
+                //using var reader = new StreamReader(csvRequest.UrlCsv);
+                //using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+                //var records = csv.GetRecords<dynamic>();
+                //var JSON = JsonConvert.SerializeObject(records);
+                //return Ok(JSON);
+
             }
             catch (Exception ex)
             {
