@@ -1,0 +1,13 @@
+C:\Users\desarrollo1\Desktop\POOL\U\ANA\EntradaAPI\obj\Release\net5.0\PubTmp\Out\EntradaAPI.exe
+C:\Users\desarrollo1\Desktop\POOL\U\ANA\EntradaAPI\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
+C:\Users\desarrollo1\Desktop\POOL\U\ANA\EntradaAPI\obj\Release\net5.0\PubTmp\Out\appsettings.json
+C:\Users\desarrollo1\Desktop\POOL\U\ANA\EntradaAPI\obj\Release\net5.0\PubTmp\Out\EntradaAPI.dll
+C:\Users\desarrollo1\Desktop\POOL\U\ANA\EntradaAPI\obj\Release\net5.0\PubTmp\Out\EntradaAPI.deps.json
+C:\Users\desarrollo1\Desktop\POOL\U\ANA\EntradaAPI\obj\Release\net5.0\PubTmp\Out\EntradaAPI.runtimeconfig.json
+C:\Users\desarrollo1\Desktop\POOL\U\ANA\EntradaAPI\obj\Release\net5.0\PubTmp\Out\EntradaAPI.pdb
+C:\Users\desarrollo1\Desktop\POOL\U\ANA\EntradaAPI\obj\Release\net5.0\PubTmp\Out\CsvHelper.dll
+C:\Users\desarrollo1\Desktop\POOL\U\ANA\EntradaAPI\obj\Release\net5.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\desarrollo1\Desktop\POOL\U\ANA\EntradaAPI\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\desarrollo1\Desktop\POOL\U\ANA\EntradaAPI\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\desarrollo1\Desktop\POOL\U\ANA\EntradaAPI\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\desarrollo1\Desktop\POOL\U\ANA\EntradaAPI\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
