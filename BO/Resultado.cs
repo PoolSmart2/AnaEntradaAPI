@@ -10,5 +10,6 @@ namespace EntradaAPI.BO
         public bool Estado { get; set; }
         public string CsvString { get; set; }
         public string Error { get; set; }
+        public List<EvergreenResponse> ResultadoJson { get; set; }
     }
 }
